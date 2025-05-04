@@ -1,0 +1,342 @@
+:root {
+  --fb-blue: #1877f2;
+  --fb-green: #42b72a;
+  --fb-gray: #f0f2f5;
+  --fb-dark-gray: #606770;
+  --fb-dark-text: #1c1e21;
+  --fb-light-text: #65676b;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 1.34;
+}
+
+.login-page {
+  min-height: 100vh;
+  background-color: var(--fb-gray);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+.login-container {
+  width: 100%;
+  max-width: 980px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.left-section {
+  flex: 1;
+  padding-right: 32px;
+  max-width: 580px;
+}
+
+.logo {
+  color: var(--fb-blue);
+  font-size: 56px;
+  font-weight: bold;
+  letter-spacing: -1px;
+  margin-bottom: 16px;
+}
+
+.tagline {
+  font-size: 28px;
+  font-weight: normal;
+  line-height: 32px;
+  width: 90%;
+}
+
+.right-section {
+  width: 396px;
+}
+
+.login-form-container {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+  margin-bottom: 28px;
+  padding: 20px;
+}
+
+.login-form-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form-container input {
+  font-size: 17px;
+  padding: 14px 16px;
+  border-radius: 6px;
+  border: 1px solid #dddfe2;
+  margin-bottom: 12px;
+}
+
+.login-form-container input:focus {
+  outline: none;
+  border-color: var(--fb-blue);
+  box-shadow: 0 0 0 2px #e7f3ff;
+}
+
+.login-btn {
+  background-color: var(--fb-blue);
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 14px 16px;
+  margin-bottom: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-btn:hover {
+  background-color: #166fe5;
+}
+
+.forgot-password {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.forgot-password a {
+  color: var(--fb-blue);
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.forgot-password a:hover {
+  text-decoration: underline;
+}
+
+.divider {
+  border-bottom: 1px solid #dadde1;
+  margin: 20px 0;
+}
+
+.create-account-btn {
+  background-color: var(--fb-green);
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
+  padding: 14px 16px;
+  margin: 0 auto;
+  display: block;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.create-account-btn:hover {
+  background-color: #36a420;
+}
+
+.create-page {
+  text-align: center;
+  margin-top: 28px;
+  color: var(--fb-dark-text);
+}
+
+.create-page p {
+  font-size: 14px;
+}
+
+.create-page a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.create-page a:hover {
+  text-decoration: underline;
+}
+
+/* Modal styling */
+.register-modal-backdrop {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+}
+
+.register-modal-backdrop.show {
+  display: flex;
+}
+
+.register-modal {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  width: 432px;
+  position: relative;
+}
+
+.register-modal-header {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #dadde1;
+}
+
+.register-header-text h2 {
+  color: var(--fb-dark-text);
+  font-size: 32px;
+  margin: 0;
+  font-weight: 600;
+}
+
+.register-header-text p {
+  color: var(--fb-dark-gray);
+  font-size: 15px;
+  margin: 0;
+  margin-top: 4px;
+}
+
+.close-modal {
+  background: none;
+  border: none;
+  color: #606770;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.name-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.name-group input {
+  flex: 1;
+}
+
+.register-modal input, .register-modal select {
+  padding: 11px;
+  font-size: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccd0d5;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.birth-date, .gender-select {
+  margin-bottom: 10px;
+}
+
+.birth-date label, .gender-select label {
+  color: var(--fb-dark-gray);
+  font-size: 12px;
+  margin-bottom: 5px;
+  display: block;
+  font-weight: normal;
+}
+
+.birth-date-selects {
+  display: flex;
+  gap: 10px;
+}
+
+.birth-date-selects select {
+  flex: 1;
+}
+
+.gender-options {
+  display: flex;
+  gap: 10px;
+}
+
+.gender-label {
+  border: 1px solid #ccd0d5;
+  border-radius: 5px;
+  padding: 9px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  position: relative;
+}
+
+.gender-label input {
+  margin: 0;
+  margin-right: 8px;
+  width: auto;
+}
+
+.terms {
+  color: var(--fb-light-text);
+  font-size: 11px;
+  margin: 11px 0;
+}
+
+.submit-btn-container {
+  text-align: center;
+}
+
+.register-btn {
+  background-color: var(--fb-green);
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 32px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  min-width: 194px;
+}
+
+.register-btn:hover {
+  background-color: #36a420;
+}
+
+@media (max-width: 900px) {
+  .login-container {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 0;
+  }
+  
+  .left-section {
+    padding-right: 0;
+    margin-bottom: 40px;
+  }
+  
+  .logo {
+    margin: 0 auto 16px;
+  }
+  
+  .tagline {
+    margin: 0 auto;
+  }
+  
+  .right-section {
+    width: 100%;
+    max-width: 396px;
+  }
+} 

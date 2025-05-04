@@ -1,0 +1,252 @@
+:root {
+  --primary-color: #1877f2;
+  --secondary-color: #42b72a;
+  --dark-color: #1c1e21;
+  --light-color: #f0f2f5;
+  --text-color: #4b4f56;
+  --error-color: #e74c3c;
+  --google-color: #db4437;
+  --fb-color: #3b5998;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--light-color);
+}
+
+.auth-page {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5f7fa 0%, #e4e9f2 100%);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.auth-container {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-branding {
+  padding: 1.5rem;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
+
+.logo-link {
+  text-decoration: none;
+}
+
+.app-name {
+  color: #3366cc;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+.auth-form-container {
+  padding: 2rem;
+}
+
+.auth-form-container h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.server-status-error, .server-error {
+  background-color: #fff8f8;
+  border-left: 4px solid #ff4d4f;
+  color: #cf1322;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  border-radius: 4px;
+}
+
+.server-status-error p {
+  margin: 0.5rem 0;
+}
+
+.retry-button {
+  background-color: #ff4d4f;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  transition: background-color 0.3s;
+}
+
+.retry-button:hover {
+  background-color: #cf1322;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.form-group input[type="email"],
+.form-group input[type="password"] {
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+  border-color: #3366cc;
+  outline: none;
+}
+
+.form-group input.error {
+  border-color: #ff4d4f;
+}
+
+.error-message {
+  color: #ff4d4f;
+  font-size: 0.85rem;
+  margin-top: 0.5rem;
+}
+
+.form-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.forgot-password a {
+  color: #3366cc;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.forgot-password a:hover {
+  text-decoration: underline;
+}
+
+.submit-btn {
+  background-color: #3366cc;
+  color: white;
+  border: none;
+  padding: 1rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 1rem;
+}
+
+.submit-btn:hover:not(:disabled) {
+  background-color: #2855b7;
+}
+
+.submit-btn:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.auth-footer {
+  text-align: center;
+  margin-top: 2rem;
+  color: #666;
+}
+
+.auth-footer a {
+  color: #3366cc;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.auth-footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive tasarım */
+@media (max-width: 768px) {
+  .auth-container {
+    max-width: 90%;
+  }
+  
+  .auth-form-container {
+    padding: 1.5rem;
+  }
+  
+  .form-options {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .auth-container {
+    max-width: 100%;
+    border-radius: 0;
+  }
+  
+  .auth-form-container {
+    padding: 1rem;
+  }
+}
+
+.dashboard-links {
+  margin-top: 20px;
+}
+
+.dashboard-link {
+  display: inline-block;
+  background-color: #f7931a;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.dashboard-link:hover {
+  background-color: #e78817;
+  text-decoration: none;
+} 

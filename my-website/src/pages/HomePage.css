@@ -1,0 +1,567 @@
+/* Ana sayfa stilleri */
+.home-page {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #f1f1f1;
+}
+
+/* Header */
+.home-header {
+  background-color: rgba(13, 17, 28, 0.95);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.app-name {
+  color: #f7931a;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.login-link, .register-link {
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.login-link {
+  color: #f7931a;
+  background: transparent;
+  border: 1px solid #f7931a;
+}
+
+.login-link:hover {
+  background: rgba(247, 147, 26, 0.1);
+}
+
+.register-link {
+  color: #0d111c;
+  background: #f7931a;
+  border: 1px solid #f7931a;
+}
+
+.register-link:hover {
+  background: #e78817;
+}
+
+/* Hero Section */
+.hero-section {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+}
+
+.hero-content {
+  flex: 1;
+  min-width: 300px;
+}
+
+.hero-content h2 {
+  font-size: 2.5rem;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  color: #b8b8cc;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.cta-button {
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.cta-button.register {
+  background: #f7931a;
+  color: #0d111c;
+  flex: 1;
+}
+
+.cta-button.register:hover {
+  background: #e78817;
+}
+
+.cta-button.login {
+  background: transparent;
+  color: #f7931a;
+  border: 1px solid #f7931a;
+  flex: 1;
+}
+
+.cta-button.login:hover {
+  background: rgba(247, 147, 26, 0.1);
+}
+
+/* Hero image */
+.hero-image {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.logo-showcase {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  height: 400px;
+}
+
+.center-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+.morkan-logo {
+  width: 150px;
+  height: 150px;
+  background: linear-gradient(135deg, #f7931a 0%, #e78817 100%);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 5px 15px rgba(247, 147, 26, 0.3);
+}
+
+.crypto-icon {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.crypto-icons {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  animation: rotate 30s infinite linear;
+}
+
+.crypto-icon {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+  font-size: 1rem;
+}
+
+.crypto-icon.btc {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #f7931a;
+  color: white;
+}
+
+.crypto-icon.eth {
+  top: 20%;
+  right: 0;
+  background: #627eea;
+  color: white;
+}
+
+.crypto-icon.bnb {
+  bottom: 20%;
+  right: 0;
+  background: #f3ba2f;
+  color: black;
+}
+
+.crypto-icon.sol {
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #14f195;
+  color: black;
+}
+
+.crypto-icon.xrp {
+  top: 20%;
+  left: 0;
+  background: #23292f;
+  color: white;
+}
+
+.crypto-symbol {
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+}
+
+.crypto-name {
+  font-size: 0.7rem;
+  opacity: 0.8;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* News Ticker */
+.news-ticker {
+  background: rgba(13, 17, 28, 0.7);
+  padding: 0.5rem;
+  border-radius: 8px;
+  margin: 0 auto 2rem;
+  max-width: 1200px;
+  display: flex;
+  overflow: hidden;
+}
+
+.ticker-header {
+  background: #f7931a;
+  color: #0d111c;
+  padding: 0.5rem 1rem;
+  font-weight: 700;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+
+.ticker-items {
+  display: flex;
+  gap: 2rem;
+  padding: 0.5rem 1rem;
+  animation: scroll 30s linear infinite;
+  white-space: nowrap;
+}
+
+.ticker-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.ticker-item .coin {
+  font-weight: 700;
+}
+
+.ticker-item.up .change {
+  color: #14f195;
+}
+
+.ticker-item.down .change {
+  color: #ff4d4f;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.ticker-loading, .ticker-error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  color: #b8b8cc;
+  width: 100%;
+  font-size: 0.9rem;
+}
+
+.ticker-error {
+  color: #ff4d4f;
+}
+
+/* Features section */
+.features-section {
+  max-width: 1200px;
+  margin: 4rem auto;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.features-section h3 {
+  font-size: 2rem;
+  color: #ffffff;
+  margin-bottom: 2rem;
+}
+
+.features-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.feature-card {
+  background: rgba(18, 21, 35, 0.7);
+  border-radius: 8px;
+  padding: 2rem;
+  flex: 1;
+  min-width: 250px;
+  max-width: 350px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  border: 1px solid rgba(247, 147, 26, 0.2);
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(247, 147, 26, 0.5);
+}
+
+.feature-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.feature-card h4 {
+  font-size: 1.3rem;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.feature-card p {
+  color: #b8b8cc;
+  line-height: 1.5;
+}
+
+.feature-button {
+  background-color: #f7931a;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 15px;
+  margin-top: 15px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.feature-button:hover {
+  background-color: #e78817;
+}
+
+/* News Section */
+.news-section {
+  max-width: 1200px;
+  margin: 4rem auto;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.news-section h3 {
+  font-size: 2rem;
+  color: #ffffff;
+  margin-bottom: 2rem;
+}
+
+.news-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.news-card {
+  background: rgba(18, 21, 35, 0.7);
+  border-radius: 8px;
+  overflow: hidden;
+  flex: 1;
+  min-width: 300px;
+  max-width: 380px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  border: 1px solid rgba(247, 147, 26, 0.2);
+  display: flex;
+  flex-direction: column;
+}
+
+.news-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(247, 147, 26, 0.5);
+}
+
+.news-image {
+  height: 180px;
+  background-size: cover;
+  background-position: center;
+}
+
+.news-image.btc-news {
+  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1518546305927-5a555bb7020d');
+}
+
+.news-image.eth-news {
+  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1621932953986-15fcf4962449');
+}
+
+.news-image.market-news {
+  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1605792657660-596af9009e82');
+}
+
+.news-content {
+  padding: 1.5rem;
+  text-align: left;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.news-content h4 {
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.news-content p {
+  color: #b8b8cc;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+  flex: 1;
+}
+
+.read-more {
+  color: #f7931a;
+  text-decoration: none;
+  font-weight: 600;
+  align-self: flex-start;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+.home-footer {
+  background: rgba(13, 17, 28, 0.95);
+  color: #b8b8cc;
+  padding: 2rem 0;
+  margin-top: auto;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer-links {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  color: #b8b8cc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #f7931a;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+  }
+  
+  .hero-content {
+    text-align: center;
+  }
+  
+  .logo-showcase {
+    height: 300px;
+  }
+  
+  .crypto-icon {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .morkan-logo {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .news-ticker {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .ticker-header {
+    margin-bottom: 0.5rem;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .news-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .news-card {
+    width: 100%;
+  }
+  
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .footer-links {
+    justify-content: center;
+  }
+} 

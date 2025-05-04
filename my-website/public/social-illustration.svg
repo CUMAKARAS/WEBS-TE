@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="500" height="400" viewBox="0 0 500 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Arka plan -->
+  <rect width="500" height="400" fill="#F0F2F5" />
+  
+  <!-- Sosyal ağ bağlantılarını temsil eden daireler ve çizgiler -->
+  <circle cx="250" cy="200" r="50" fill="#1877F2" />
+  <circle cx="150" cy="150" r="30" fill="#42B72A" />
+  <circle cx="350" cy="150" r="30" fill="#1877F2" />
+  <circle cx="100" cy="250" r="25" fill="#1877F2" />
+  <circle cx="200" cy="300" r="25" fill="#42B72A" />
+  <circle cx="300" cy="300" r="25" fill="#1877F2" />
+  <circle cx="400" cy="250" r="25" fill="#42B72A" />
+  
+  <!-- Bağlantı çizgileri -->
+  <line x1="250" y1="200" x2="150" y2="150" stroke="#CCCCCC" stroke-width="3" />
+  <line x1="250" y1="200" x2="350" y2="150" stroke="#CCCCCC" stroke-width="3" />
+  <line x1="250" y1="200" x2="100" y2="250" stroke="#CCCCCC" stroke-width="3" />
+  <line x1="250" y1="200" x2="200" y2="300" stroke="#CCCCCC" stroke-width="3" />
+  <line x1="250" y1="200" x2="300" y2="300" stroke="#CCCCCC" stroke-width="3" />
+  <line x1="250" y1="200" x2="400" y2="250" stroke="#CCCCCC" stroke-width="3" />
+  
+  <!-- Bağlantı çizgileri (ikincil) -->
+  <line x1="150" y1="150" x2="100" y2="250" stroke="#CCCCCC" stroke-width="2" />
+  <line x1="350" y1="150" x2="400" y2="250" stroke="#CCCCCC" stroke-width="2" />
+  <line x1="200" y1="300" x2="300" y2="300" stroke="#CCCCCC" stroke-width="2" />
+  
+  <!-- Kullanıcı simgesi ana düğümde -->
+  <circle cx="250" cy="200" r="30" fill="white" />
+  <circle cx="250" cy="185" r="10" fill="#666666" />
+  <path d="M230 210C230 200 240 195 250 195C260 195 270 200 270 210" stroke="#666666" stroke-width="4" />
+  
+  <!-- Sosyal medya ikonları -->
+  <text x="143" y="155" font-family="Arial" font-size="12" fill="white">🏠</text>
+  <text x="343" y="155" font-family="Arial" font-size="12" fill="white">👥</text>
+  <text x="93" y="255" font-family="Arial" font-size="12" fill="white">📷</text>
+  <text x="193" y="305" font-family="Arial" font-size="12" fill="white">💬</text>
+  <text x="293" y="305" font-family="Arial" font-size="12" fill="white">🔔</text>
+  <text x="393" y="255" font-family="Arial" font-size="12" fill="white">⭐</text>
+</svg> 

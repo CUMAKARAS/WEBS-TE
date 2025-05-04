@@ -1,0 +1,309 @@
+.crypto-analysis-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  color: white;
+}
+
+.crypto-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.back-button {
+  padding: 0.5rem 1rem;
+  background-color: #4CAF50;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.back-button:hover {
+  background-color: #45a049;
+}
+
+.analysis-controls {
+  display: grid;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.select-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.select-container label {
+  font-weight: bold;
+}
+
+.select-container select {
+  padding: 0.8rem;
+  border-radius: 5px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #333;
+}
+
+.analyze-button {
+  padding: 1rem;
+  background-color: #2196F3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.analyze-button:hover:not(:disabled) {
+  background-color: #1976D2;
+}
+
+.analyze-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.loading-indicator {
+  color: #2196F3;
+  font-style: italic;
+}
+
+.error-message {
+  background-color: rgba(255, 68, 68, 0.1);
+  color: #ff4444;
+  padding: 1rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.loading {
+  text-align: center;
+  padding: 1rem;
+  color: #2196F3;
+}
+
+.analysis-results {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.chart-container {
+  margin: 2rem 0;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1rem;
+  border-radius: 8px;
+  height: 800px;
+  width: 100%;
+  position: relative;
+}
+
+.analysis-details {
+  display: grid;
+  gap: 2rem;
+}
+
+.price-info {
+  text-align: center;
+}
+
+.last-updated {
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
+.indicators {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.indicator-card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.indicator-card h4 {
+  margin-bottom: 0.5rem;
+  color: #aaa;
+}
+
+.value {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.value.overbought {
+  color: #ff4444;
+}
+
+.value.oversold {
+  color: #4CAF50;
+}
+
+.value.bullish {
+  color: #4CAF50;
+}
+
+.value.bearish {
+  color: #ff4444;
+}
+
+.recommendation-container {
+  text-align: center;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+}
+
+.recommendation-title {
+  margin-bottom: 1rem;
+}
+
+.recommendation {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.recommendation.buy {
+  color: #4CAF50;
+}
+
+.recommendation.sell {
+  color: #ff4444;
+}
+
+.recommendation.hold {
+  color: #2196F3;
+}
+
+.price-prediction {
+  color: #aaa;
+}
+
+.disclaimer {
+  margin-top: 2rem;
+  padding: 1rem;
+  background: rgba(255, 68, 68, 0.1);
+  border-radius: 8px;
+  font-size: 0.9rem;
+  color: #ff4444;
+}
+
+.binance-dark-bg {
+  background: #181a20 !important;
+  color: #eaecef !important;
+}
+
+.crypto-analysis {
+  background: #181a20;
+  color: #eaecef;
+  min-height: 100vh;
+  padding: 0;
+}
+
+.analysis-results {
+  background: #181a20;
+  color: #eaecef;
+  padding: 0;
+  border-radius: 0;
+  width: 100%;
+  max-width: 100vw;
+  margin: 0 auto;
+}
+
+.chart-container {
+  margin: 0;
+  background: #181a20;
+  padding: 0;
+  border-radius: 0;
+  height: 600px;
+  width: 100%;
+  position: relative;
+}
+
+.binance-header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+  font-size: 1.1rem;
+  background: #1e2329;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #222;
+  margin-bottom: 0;
+}
+
+.binance-symbol {
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: #f0b90b;
+}
+
+.binance-price {
+  color: #26a69a;
+}
+
+.binance-ohlc {
+  color: #eaecef;
+}
+
+.binance-volume {
+  color: #f6465d;
+}
+
+.controls {
+  background: #1e2329;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #222;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+select, .analyze-button {
+  background: #181a20;
+  color: #eaecef;
+  border: 1px solid #333;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+}
+
+.analyze-button {
+  background: #f0b90b;
+  color: #181a20;
+  font-weight: bold;
+  border: none;
+  transition: background 0.2s;
+}
+
+.analyze-button:hover:not(:disabled) {
+  background: #ffd700;
+}
+
+.error-message {
+  background: #2d2323;
+  color: #ff4444;
+  padding: 1rem;
+  border-radius: 5px;
+  margin: 1rem 2rem;
+}
+
+.loading {
+  text-align: center;
+  padding: 1rem;
+  color: #f0b90b;
+} 
